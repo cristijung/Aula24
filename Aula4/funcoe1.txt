@@ -1,0 +1,21 @@
+//Funções 1
+
+main() {
+  
+  dynamic  dadosClientes() {
+    
+    dynamic nome = "Ana";
+    dynamic idade = 35;
+    dynamic endereco = "R. Abc, 24";
+    dynamic cpf = "453.567.987.17";
+    
+    print("Nome: $nome \n"
+          "Idade: $idade \n"
+          "Endereço: $endereco \n"
+          "CPF: $cpf \n");
+  }
+  
+  dadosClientes();
+  
+  
+}

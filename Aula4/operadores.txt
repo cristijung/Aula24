@@ -1,0 +1,27 @@
+//OPERADORES
+void main() {
+  
+  // Operadores Aritmeticos (binários/infix)
+  int a = 7;
+  int b = 3;
+
+  int resultado = a + b; //adição
+  print(resultado);
+  print(a - b); //subtração
+  print(a * b); //multiplicação
+  print(a / b); //divisão
+  print(a % b); //resto da divisão - Módulo
+  print(33 % 2);
+  print(34 % 2);
+  print(a + b * a - b / a); //na precedencia, equivale a isso ==> (a + (b * a) - (b / a))
+
+  // Operadores Lógicos
+  bool fragil = true;
+  bool caro = false;
+
+  print(fragil && caro); // AND ==> E
+  print(fragil || caro); // OR ==> OU
+  print(fragil ^ caro); // XOR ==> OU Exclusivo
+  print(!fragil); // NOT ==> Unário/Prefix
+  print(!!caro); // NOT ==> Exclusivo
+}

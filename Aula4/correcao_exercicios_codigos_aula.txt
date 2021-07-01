@@ -1,0 +1,159 @@
+Exer
+
+//1. Criar um programa onde ele recebe o nome, sobrenome, idade e endereço. Estes dados precisam ser impressos na tela;
+//trabalhar com as variáveis String
+
+void main() {
+  
+  String nome = "Ana";
+  String sobre_nome = "De Souza";
+  String idade = "24 anos";
+  String endereco = "R. Abc, 34";
+  
+  print("Seu nome é: $nome \n"
+        "Sobrenome: $sobre_nome \n"
+        "A sua idade é: $idade \n"
+        "Você mora em: $endereco");
+  
+}
+-----------------------------------------------------
+//2. Criar um programa onde é definido o valor da entrada de uma sessão de cinema e depois multiplicado por 4 pessoas. O programa deverá imprimir na tela estas informações;
+
+void main() {
+  
+  double ingressos = 51.50;
+  int pessoas = 4;
+  double soma = ingressos * pessoas;
+  
+  print("O valor unitário dos ingressos é: $ingressos \n"
+        "A quantidade de pessoas é: $pessoas \n"
+        "O valor gasto será de: $soma" + " Reais");
+  
+}
+
+-----------------------------------------------------
+//3. Faça um programa que calcule e mostre a área de um trapézio. Sabe-se que: Área = ((base menor + base maior) * altura) /2;
+
+void main(){
+  
+  int bMenor = 8;
+  int bMaior = 12;
+  int altura = 4;
+  int a = 2;
+  
+  double soma = ((bMenor + bMaior) * altura) / a;
+  
+  print("A área do trapézio tem sua base menor no valor de: $bMenor \n"
+       "A base maior no valor de: $bMaior \n"
+       "A altura equivale a: $altura \n"
+       "Sabemos que a área total é: $soma");
+}
+
+-------------------------------------------------------
+//4. Faça um programa que calcule e mostre a área de um quadrado;
+
+void main() {
+  
+  int lado = 4;
+  int area = lado * lado;
+  
+  print("A área do quadrado  é: $area");
+}
+------------------------------------------------------
+//5. Faça um programa que compare os nomes de pessoas e retorne o texto: É a mesma pessoa, do contrário, retorne o texto: Os nomes não conferem;
+
+void main() {
+  
+  String nome = "Jacinta";
+  
+  print(nome);
+  
+  if(nome == "Ana") {
+    print("Deu match no nome!");
+     }else{
+    print("Os nomes não conferem!");
+  }
+}
+------------------------------------------------------
+Variante
+
+void main() {
+  
+  String nome1 = "Jacinta ";
+  String nome2 = "Jacinta ";
+  
+  print(nome1 + nome2);
+  
+  if(nome1 == nome2) {
+    print("Deu match no nome!");
+     }else{
+    print("Os nomes não conferem!");
+  }
+}
+-------------------------------------------------------
+CÓDIGOS AULA
+29/06
+-------------------------------------------------------
+FUNÇÕES
+
+//Funções 1
+void main() {
+  
+  //criando a função sem parâmetro e com dados do tipo dinâmico
+  dynamic dadosClientes() {
+    
+    //tudo o que ficar entre as "{}" da função pertender a este bloco de rotina
+    dynamic nome = "Ana";
+    dynamic idade = 35;
+    dynamic endereco = "R. Abc, 34 - Porto Alegre";
+    dynamic cpf = "567.987.123.14";
+    
+    print("Nome: $nome \n"
+          "Idade: $idade \n"
+          "Endereço: $endereco \n"
+          "CPF: $cpf \n");
+  } //fechamento da função
+  
+  dadosClientes(); //chama e executa a função;
+}
+
+
+--------------------------------------------
+//Funções 2 - math
+
+void main() {
+  
+  /*
+   * declaração da função reservada onde é passado parametros
+   * 2 parametros do tipo int
+   * dentro da função tem variável "soma1" já recebendo uma 
+   * atribuição de outra função "somaFn"   *
+   * função que não possui return
+   */
+  int Function(int, int) 
+  soma = somaFn;
+  print(soma(2, 8));
+  
+  
+  /*
+   * Função reservada que também passa parametro
+   * declaração da variável q recebe 2 incógnitas
+   * as quais são executadas no return
+   */
+  int Function(int, int) 
+    subtrair = (x, y) {
+    return y - x;
+  };
+  
+  print(subtrair(2, 6));
+  
+}
+
+//fora da main
+/*
+ * função somaFn ela é invocada na função Function com 
+ * variavel soma. A Function passa dois parâmetros int
+ */
+int somaFn(int a, int b) {
+  return a + b;
+}

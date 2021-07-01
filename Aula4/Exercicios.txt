@@ -1,0 +1,51 @@
+
+// Exer1. Criar um programa onde ele recebe o nome, sobre nome, idade e endereço. Estes dados //precisam ser impressos na tela;*\
+
+void main() {  
+
+  String nome = "Ana";
+  String sobre_nome = "De Souza";
+  String idade = "22 anos";
+  String endereco = "Porto Alegre";
+
+  print("Seu nome é: $nome \n"
+        "A sua idade é: " $idade \n"
+        "Você mora em: $endereco);
+}
+
+----------------------------------------------------
+Exer2. //Criar um programa onde é definido o valor da entrada de uma sessão de cinema e depois multiplicado por 4 pessoas. O programa deverá imprimir na tela estas informações;
+
+void main() 
+{
+
+  double ingressos = 51.00;
+  int pessoas = 4;
+  double soma = ( ingressos * pessoas );
+  
+  print("O valor do ingresso é de: $ingressos \n"
+        "O Valor total de gasto será: $soma \n");
+}
+
+----------------------------------------------------
+//Exer3. Faça um programa que calcule e mostre a área de um trapézio. Sabe-se que: Área = ((base maior + base menor) * altura) /2;
+
+void main() 
+{
+
+  
+  int base_menor = 8;
+  int base_maior = 12;
+  int altura = 4;
+  int x = 2;
+  
+  int soma = (((base_maior + base_menor) * altura) operador x);
+  
+  print("A àrea do trapézio cuja Base menor equivale a: $base_menor \n"
+        "A base maior equivale a: $base_maior \n"
+        "A altura equivale a: $altura \n"
+        "Sabemos que a área é de: $soma");
+  
+}
+
+-----------------------------------------------------

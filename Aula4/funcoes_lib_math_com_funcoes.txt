@@ -1,0 +1,26 @@
+//Funções lib + integração de funções
+
+import 'dart:math';
+
+main() {
+
+  int resultado = somar(2, 3);
+  resultado *= 2; //multiplicar este numero do resultado pelo 2
+  print("O resultado é $resultado.");
+
+  print("O resuultado é ${somarNumerosAleatorios()}.");
+
+}
+
+//criação das funções fora do main
+int somar(int a, int b) {
+  return a + b;
+}
+
+//função
+int somarNumerosAleatorios(){
+  int a = Random().nextInt(11);
+  int b = Random().nextInt(11);
+
+  return a + b;
+}
